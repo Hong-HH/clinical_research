@@ -12,6 +12,7 @@ def main() :
         st.markdown('### 질병관리청에서 제공한 데이터를 바탕으로 임상연구 데이터 분석, 기준날짜 2017년6월20일')
         df = pd.read_csv('data/research.csv')
         st.dataframe(df)
+        st.write('데이터 출처 https://www.data.go.kr/data/15083215/fileData.do')
 
     elif choice == '데이터분석' :
         run_eda_app()
